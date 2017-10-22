@@ -4,7 +4,7 @@
 %	Created: 	2017/10/08
 % 	Author: 	Han Verstraete <welteki@outlook.com>
 %
-% 
+%
 % 	Article template for Vives university college
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -27,7 +27,7 @@
 \RequirePackage{graphicx,xcolor}
 \RequirePackage{lastpage}
 \RequirePackage{tikz}
-	
+
 %############################################################################
 % Define colors
 \definecolor{vivesrood}{RGB}{227,29,26}
@@ -62,7 +62,7 @@
 \rhead{
 	\begin{tikzpicture}[inner sep=0mm]
         \fill[vivesrood] (-0.15,0) rectangle (0,1.2);
-        \node[anchor=west] at ( 0.5,0.6) {\includegraphics[height=1.3cm]{vivesmini}};
+        \node[anchor=west] at ( 0.5,0.6) {\includegraphics[height=1.3cm]{lib/vivesMiniLogo}};
     \end{tikzpicture}
 }
 
@@ -84,8 +84,8 @@
 % Redefine maketitle
 \renewcommand{\maketitle}{
 	\begin{tikzpicture}[remember picture,overlay, shift={(current page.north west)}]
-		\node[anchor=north west] at (3, -0.5) (vivesLogo) {\includegraphics[height=2.7cm]{vivesLogo}};
-		\node[anchor=north east] at (19, -1.35) (associatieLogo) {\includegraphics[height=0.7cm]{associatieLogo}};
+		\node[anchor=north west] at (3, -0.5) (vivesLogo) {\includegraphics[height=2.7cm]{lib/vivesLogo}};
+		\node[anchor=north east] at (19, -1.35) (associatieLogo) {\includegraphics[height=0.7cm]{lib/associatieLogo}};
 		\fill[vivesrood] (16.6,-1.2) rectangle (16.75, -2.4);
 		\node[anchor=north east] at (16.1,-1.2) {
 			\begingroup
